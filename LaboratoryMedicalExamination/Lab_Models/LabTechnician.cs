@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LaboratoryMedicalExamination
+namespace LaboratoryMedicalExamination.Lab_Models
 {
     public class LabTechnician
     {
@@ -13,13 +13,13 @@ namespace LaboratoryMedicalExamination
         public int LabTechnicianID { get; set; }
 
         [Required]
-        public string Name { get; set; }
+        public string Name { get; set; }=null!;
 
-        public string Specialty { get; set; }
+        public string Specialty { get; set; } = null!;
 
-        public string ContactInformation { get; set; }
+        public string? ContactInformation { get; set; } 
 
-        public ICollection<BloodTest> BloodTests { get; set; }
+        public ICollection<BloodTest>? BloodTests { get; set; }
     }
 
 

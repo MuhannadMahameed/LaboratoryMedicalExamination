@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LaboratoryMedicalExamination
+namespace LaboratoryMedicalExamination.Lab_Models
 {
     public class BloodParameter
     {
@@ -18,6 +18,6 @@ namespace LaboratoryMedicalExamination
         [Required]
         public string UnitOfMeasurement { get; set; }
 
-        public string Description { get; set; }
+        public string Description { get; set; } = null!;
     }
 }

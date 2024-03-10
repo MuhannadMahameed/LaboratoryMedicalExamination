@@ -5,14 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LaboratoryMedicalExamination
+namespace LaboratoryMedicalExamination.Lab_Models
 {
-    public class TestMethodology 
+    public class TestMethodology
     {
         [Key]
         public int MethodologyID { get; set; }
 
         [Required]
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
     }
 }

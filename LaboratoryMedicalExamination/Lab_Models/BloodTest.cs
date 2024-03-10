@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LaboratoryMedicalExamination
+namespace LaboratoryMedicalExamination.Lab_Models
 {
     public class BloodTest
     {
@@ -25,11 +25,11 @@ namespace LaboratoryMedicalExamination
         [Required]
         public string TestResults { get; set; }
 
-        public string Comments { get; set; }
+        public string Comments { get; set; } = null!;
 
         [ForeignKey("PatientID")]
-        public Patient Patient { get; set; }
+        public Patient Patient { get; set; } = null!;
 
-        public ICollection<Result> Results { get; set; }
+        public ICollection<Result> Results { get; set; } = null!;
     }
 }

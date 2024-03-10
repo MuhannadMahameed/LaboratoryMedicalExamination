@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LaboratoryMedicalExamination
+namespace LaboratoryMedicalExamination.Lab_Models
 {
-    public  class ReferenceRange
+    public class ReferenceRange
     {
         [Key]
         public int RangeID { get; set; }
@@ -16,9 +16,9 @@ namespace LaboratoryMedicalExamination
         [Required]
         public int ParameterID { get; set; }
 
-        public string AgeRange { get; set; }
+        public string AgeRange { get; set; } = null!;
 
-        public string Gender { get; set; }
+        public string Gender { get; set; } = null!;
 
         [Required]
         public double LowerLimit { get; set; }
@@ -27,6 +27,6 @@ namespace LaboratoryMedicalExamination
         public double UpperLimit { get; set; }
 
         [ForeignKey("ParameterID")]
-        public BloodParameter BloodParameter { get; set; }
+        public BloodParameter BloodParameter { get; set; }=null!;
     }
 }
