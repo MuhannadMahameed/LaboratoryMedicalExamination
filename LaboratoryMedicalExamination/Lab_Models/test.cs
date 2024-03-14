@@ -17,7 +17,7 @@ public class LaboratoryDbContext : DbContext
     public DbSet<AuditLog> AuditLogs { get; set; }
     public DbSet<SystemSetting> SystemSettings { get; set; }
 
-    // Override the OnModelCreating method if necessary to include further configuration
+    // Override the OnModelCreating method if necessary to include further configuratio
 }
 
 // Models
